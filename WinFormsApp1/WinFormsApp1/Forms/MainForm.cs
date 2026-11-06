@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Windows.Forms;
 using Autofac;
 
@@ -14,12 +14,12 @@ namespace DrivingSchool.Forms
 			_scope = scope ?? throw new ArgumentNullException(nameof(scope));
 		}
 
-		private void ÊàòåãîðèèToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<CategoryListForm>().ShowDialog();
-		private void ÈíñòðóêòîðûToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<InstructorListForm>().ShowDialog();
-		private void ÒèïûÇàíÿòèéToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<LessonTypeListForm>().ShowDialog();
-		private void ÃðóïïûToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<StudyGroupListForm>().ShowDialog();
-		private void ÇàíÿòèÿToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<LessonListForm>().ShowDialog();
-		private void ÝêçàìåíûToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<ExamListForm>().ShowDialog();
-		private void ÎïëàòûToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<PaymentListForm>().ShowDialog();
+		private void ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<CategoryListForm>().ShowDialog();
+		private void Ð˜Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ñ‹ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<InstructorListForm>().ShowDialog();
+		private void Ð¢Ð¸Ð¿Ñ‹Ð—Ð°Ð½ÑÑ‚Ð¸Ð¹ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<LessonTypeListForm>().ShowDialog();
+		private void Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<StudyGroupListForm>().ShowDialog();
+		private void Ð—Ð°Ð½ÑÑ‚Ð¸ÑToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<LessonListForm>().ShowDialog();
+		private void Ð­ÐºÐ·Ð°Ð¼ÐµÐ½Ñ‹ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<ExamListForm>().ShowDialog();
+		private void ÐžÐ¿Ð»Ð°Ñ‚Ñ‹ToolStripMenuItem_Click(object sender, EventArgs e) => _scope.Resolve<PaymentListForm>().ShowDialog();
 	}
 }

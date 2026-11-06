@@ -23,67 +23,108 @@
 
 		private void InitializeComponent()
 		{
-			this.menuStrip = new System.Windows.Forms.MenuStrip();
-			this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.категорииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.инструкторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.типыЗанятийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.группыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.операцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.занятияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.экзаменыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.оплатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
+			menuStrip = new MenuStrip();
+			справочникиToolStripMenuItem = new ToolStripMenuItem();
+			категорииToolStripMenuItem = new ToolStripMenuItem();
+			инструкторыToolStripMenuItem = new ToolStripMenuItem();
+			типыЗанятийToolStripMenuItem = new ToolStripMenuItem();
+			группыToolStripMenuItem = new ToolStripMenuItem();
+			операцииToolStripMenuItem = new ToolStripMenuItem();
+			занятияToolStripMenuItem = new ToolStripMenuItem();
+			экзаменыToolStripMenuItem = new ToolStripMenuItem();
+			оплатыToolStripMenuItem = new ToolStripMenuItem();
+			отчетыToolStripMenuItem = new ToolStripMenuItem();
+			menuStrip.SuspendLayout();
+			SuspendLayout();
+			// 
 			// menuStrip
-			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-				this.справочникиToolStripMenuItem,
-				this.операцииToolStripMenuItem,
-				this.отчетыToolStripMenuItem});
-			this.menuStrip.Location = new System.Drawing.Point(0, 0);
-			this.menuStrip.Name = "menuStrip";
-			this.menuStrip.Size = new System.Drawing.Size(800, 24);
-
-			// Справочники
-			this.справочникиToolStripMenuItem.Text = "Справочники";
-			this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-				this.категорииToolStripMenuItem, this.инструкторыToolStripMenuItem,
-				this.типыЗанятийToolStripMenuItem, this.группыToolStripMenuItem});
-
-			this.категорииToolStripMenuItem.Text = "Категории";
-			this.категорииToolStripMenuItem.Click += new System.EventHandler(this.КатегорииToolStripMenuItem_Click);
-
-			this.инструкторыToolStripMenuItem.Text = "Инструкторы";
-			this.инструкторыToolStripMenuItem.Click += new System.EventHandler(this.ИнструкторыToolStripMenuItem_Click);
-
-			this.типыЗанятийToolStripMenuItem.Text = "Типы занятий";
-			this.типыЗанятийToolStripMenuItem.Click += new System.EventHandler(this.ТипыЗанятийToolStripMenuItem_Click);
-
-			this.группыToolStripMenuItem.Text = "Учебные группы";
-			this.группыToolStripMenuItem.Click += new System.EventHandler(this.ГруппыToolStripMenuItem_Click);
-
-			// Операции
-			this.операцииToolStripMenuItem.Text = "Операции";
-			this.операцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-				this.занятияToolStripMenuItem, this.экзаменыToolStripMenuItem, this.оплатыToolStripMenuItem});
-
-			this.занятияToolStripMenuItem.Text = "Занятия";
-			this.занятияToolStripMenuItem.Click += new System.EventHandler(this.ЗанятияToolStripMenuItem_Click);
-
-			this.экзаменыToolStripMenuItem.Text = "Экзамены";
-			this.экзаменыToolStripMenuItem.Click += new System.EventHandler(this.ЭкзаменыToolStripMenuItem_Click);
-
-			this.оплатыToolStripMenuItem.Text = "Оплаты";
-			this.оплатыToolStripMenuItem.Click += new System.EventHandler(this.ОплатыToolStripMenuItem_Click);
-
-			// Отчеты
-			this.отчетыToolStripMenuItem.Text = "Отчеты";
-
+			// 
+			menuStrip.Items.AddRange(new ToolStripItem[] { справочникиToolStripMenuItem, операцииToolStripMenuItem, отчетыToolStripMenuItem });
+			menuStrip.Location = new Point(0, 0);
+			menuStrip.Name = "menuStrip";
+			menuStrip.Size = new Size(800, 24);
+			menuStrip.TabIndex = 0;
+			// 
+			// справочникиToolStripMenuItem
+			// 
+			справочникиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { категорииToolStripMenuItem, инструкторыToolStripMenuItem, типыЗанятийToolStripMenuItem, группыToolStripMenuItem });
+			справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
+			справочникиToolStripMenuItem.Size = new Size(94, 20);
+			справочникиToolStripMenuItem.Text = "Справочники";
+			// 
+			// категорииToolStripMenuItem
+			// 
+			категорииToolStripMenuItem.Name = "категорииToolStripMenuItem";
+			категорииToolStripMenuItem.Size = new Size(167, 22);
+			категорииToolStripMenuItem.Text = "Категории";
+			категорииToolStripMenuItem.Click += КатегорииToolStripMenuItem_Click;
+			// 
+			// инструкторыToolStripMenuItem
+			// 
+			инструкторыToolStripMenuItem.Name = "инструкторыToolStripMenuItem";
+			инструкторыToolStripMenuItem.Size = new Size(167, 22);
+			инструкторыToolStripMenuItem.Text = "Инструкторы";
+			инструкторыToolStripMenuItem.Click += ИнструкторыToolStripMenuItem_Click;
+			// 
+			// типыЗанятийToolStripMenuItem
+			// 
+			типыЗанятийToolStripMenuItem.Name = "типыЗанятийToolStripMenuItem";
+			типыЗанятийToolStripMenuItem.Size = new Size(167, 22);
+			типыЗанятийToolStripMenuItem.Text = "Типы занятий";
+			типыЗанятийToolStripMenuItem.Click += ТипыЗанятийToolStripMenuItem_Click;
+			// 
+			// группыToolStripMenuItem
+			// 
+			группыToolStripMenuItem.Name = "группыToolStripMenuItem";
+			группыToolStripMenuItem.Size = new Size(167, 22);
+			группыToolStripMenuItem.Text = "Учебные группы";
+			группыToolStripMenuItem.Click += ГруппыToolStripMenuItem_Click;
+			// 
+			// операцииToolStripMenuItem
+			// 
+			операцииToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { занятияToolStripMenuItem, экзаменыToolStripMenuItem, оплатыToolStripMenuItem });
+			операцииToolStripMenuItem.Name = "операцииToolStripMenuItem";
+			операцииToolStripMenuItem.Size = new Size(75, 20);
+			операцииToolStripMenuItem.Text = "Операции";
+			// 
+			// занятияToolStripMenuItem
+			// 
+			занятияToolStripMenuItem.Name = "занятияToolStripMenuItem";
+			занятияToolStripMenuItem.Size = new Size(129, 22);
+			занятияToolStripMenuItem.Text = "Занятия";
+			занятияToolStripMenuItem.Click += ЗанятияToolStripMenuItem_Click;
+			// 
+			// экзаменыToolStripMenuItem
+			// 
+			экзаменыToolStripMenuItem.Name = "экзаменыToolStripMenuItem";
+			экзаменыToolStripMenuItem.Size = new Size(129, 22);
+			экзаменыToolStripMenuItem.Text = "Экзамены";
+			экзаменыToolStripMenuItem.Click += ЭкзаменыToolStripMenuItem_Click;
+			// 
+			// оплатыToolStripMenuItem
+			// 
+			оплатыToolStripMenuItem.Name = "оплатыToolStripMenuItem";
+			оплатыToolStripMenuItem.Size = new Size(129, 22);
+			оплатыToolStripMenuItem.Text = "Оплаты";
+			оплатыToolStripMenuItem.Click += ОплатыToolStripMenuItem_Click;
+			// 
+			// отчетыToolStripMenuItem
+			// 
+			отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
+			отчетыToolStripMenuItem.Size = new Size(60, 20);
+			отчетыToolStripMenuItem.Text = "Отчеты";
+			// 
 			// MainForm
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.menuStrip); // <-- ВОТ ЭТА СТРОКА ДОБАВЛЯЕТ МЕНЮ НА ФОРМУ
-			this.MainMenuStrip = this.menuStrip;
-			this.Text = "Автошкола - Главное меню";
+			// 
+			ClientSize = new Size(800, 450);
+			Controls.Add(menuStrip);
+			MainMenuStrip = menuStrip;
+			Name = "MainForm";
+			Text = "Автошкола - Главное меню";
+			menuStrip.ResumeLayout(false);
+			menuStrip.PerformLayout();
+			ResumeLayout(false);
+			PerformLayout();
 		}
 	}
 }
