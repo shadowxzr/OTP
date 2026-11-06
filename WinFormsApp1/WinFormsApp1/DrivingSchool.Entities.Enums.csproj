@@ -8,4 +8,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Attendance.cs" />
+    <Compile Remove="CategoreType.cs" />
+    <Compile Remove="Category.cs" />
+    <Compile Remove="Enums\Attendance.cs" />
+    <Compile Remove="Exam.cs" />
+    <Compile Remove="ExamType.cs" />
+    <Compile Remove="Instructor.cs" />
+    <Compile Remove="Lesson.cs" />
+    <Compile Remove="LessonType.cs" />
+    <Compile Remove="Payment.cs" />
+    <Compile Remove="Student.cs" />
+    <Compile Remove="StudyGroup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\interfaces\" />
+  </ItemGroup>
+
 </Project>
