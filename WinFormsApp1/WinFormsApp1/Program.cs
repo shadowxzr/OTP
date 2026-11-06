@@ -2,7 +2,7 @@ using System;
 using System.Windows.Forms;
 using Autofac;
 using DrivingSchool.Infrastructure;
-//using DrivingSchool.Forms; // Здесь будет лежать MainForm
+using DrivingSchool.Forms; // Здесь будет лежать MainForm
 
 namespace DrivingSchool
 {
