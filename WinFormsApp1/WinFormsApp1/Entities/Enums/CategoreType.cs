@@ -1,4 +1,4 @@
-﻿namespace DrivingSchool.Entities.Enums
+﻿namespace DrivingSchool.Entities.Enums.Entities.Enums
 {
 	public enum CategoryType
 	{

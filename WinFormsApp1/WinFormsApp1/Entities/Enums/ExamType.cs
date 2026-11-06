@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DrivingSchool.Entities.Enums
+namespace DrivingSchool.Entities.Enums.Entities.Enums
 {
 	[Flags]
 	public enum ExamType
@@ -8,6 +8,5 @@ namespace DrivingSchool.Entities.Enums
 		None = 0,
 		Theory = 1,
 		Driving = 2,
-		Both = Theory | Driving
 	}
 }

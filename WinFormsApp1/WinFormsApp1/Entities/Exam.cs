@@ -1,5 +1,4 @@
-﻿using System;
-using DrivingSchool.Entities.Enums;
+﻿using DrivingSchool.Entities.Enums.Entities.Enums;
 
 namespace DrivingSchool.Entities
 {

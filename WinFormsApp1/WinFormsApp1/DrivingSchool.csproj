@@ -12,7 +12,7 @@
     <Compile Remove="Attendance.cs" />
     <Compile Remove="CategoreType.cs" />
     <Compile Remove="Category.cs" />
-    <Compile Remove="Enums\Attendance.cs" />
+    <Compile Remove="Entities\Enums\Attendance.cs" />
     <Compile Remove="Exam.cs" />
     <Compile Remove="ExamType.cs" />
     <Compile Remove="Instructor.cs" />
@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\interfaces\" />
+    <PackageReference Include="Autofac" Version="9.3.4" />
   </ItemGroup>
 
 </Project>

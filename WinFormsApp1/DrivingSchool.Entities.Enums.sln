@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingSchool.Entities.Enums", "WinFormsApp1\DrivingSchool.Entities.Enums.csproj", "{4EDCA6FD-A734-4318-A090-712F22EB03FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingSchool", "WinFormsApp1\DrivingSchool.csproj", "{4EDCA6FD-A734-4318-A090-712F22EB03FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
