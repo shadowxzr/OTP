@@ -21,5 +21,8 @@ namespace DrivingSchool.Entities
 				Grade = grade
 			};
 		}
+		protected Exam() {}
+
+		public Student Student { get; private set; }
 	}
 }

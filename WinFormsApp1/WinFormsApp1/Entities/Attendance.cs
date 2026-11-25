@@ -17,5 +17,9 @@
 				IsPresent = isPresent
 			};
 		}
+		protected Attendance () { }
+
+		public Student Student { get; private set; }
+		public Lesson Lesson { get; private set; }
 	}
 }

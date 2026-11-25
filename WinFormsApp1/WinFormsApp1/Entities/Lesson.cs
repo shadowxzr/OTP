@@ -20,5 +20,11 @@ namespace DrivingSchool.Entities
 				GroupId = groupId
 			};
 		}
+		protected Lesson() { }
+
+		public LessonType LessonType { get; private set; }
+		public Instructor Instructor { get; private set; }
+		public StudyGroup Group { get; private set; }
+		public ICollection<Attendance> Attendances { get; private set; } = new List<Attendance>();
 	}
 }

@@ -23,5 +23,11 @@ namespace DrivingSchool.Entities
 				GroupId = groupId
 			};
 		}
+		protected Student() { }
+
+		public StudyGroup Group { get; private set; }
+		public ICollection<Exam> Exams { get; private set; } = new List<Exam>();
+		public ICollection<Payment> Payments { get; private set; } = new List<Payment>();
+		public ICollection<Attendance> Attendances { get; private set; } = new List<Attendance>();
 	}
 }

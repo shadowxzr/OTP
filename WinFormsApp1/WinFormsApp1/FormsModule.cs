@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using DrivingSchool.Forms; // Убедитесь, что namespace совпадает с вашим
+using DrivingSchool.Forms; 
 
 namespace DrivingSchool.Infrastructure.Modules
 {

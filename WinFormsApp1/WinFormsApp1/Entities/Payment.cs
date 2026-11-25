@@ -19,5 +19,8 @@ namespace DrivingSchool.Entities
 				PaymentDate = paymentDate
 			};
 		}
+		protected Payment() { }
+
+		public Student Student { get; private set; }
 	}
 }

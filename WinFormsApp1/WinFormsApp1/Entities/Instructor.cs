@@ -19,5 +19,8 @@
 				ExperienceYears = experienceYears
 			};
 		}
+		protected Instructor() { }
+
+		public ICollection<Lesson> Lessons { get; private set; } = new List<Lesson>();
 	}
 }

@@ -15,5 +15,8 @@
 				IsTheory = isTheory
 			};
 		}
+		protected LessonType() { }
+
+		public ICollection<Lesson> Lessons { get; private set; } = new List<Lesson>();
 	}
 }

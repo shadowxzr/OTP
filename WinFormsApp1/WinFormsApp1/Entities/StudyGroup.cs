@@ -15,5 +15,10 @@
 				CategoryId = categoryId
 			};
 		}
+		protected StudyGroup() { }
+
+		public Category Category { get; private set; }
+		public ICollection<Student> Students { get; private set; } = new List<Student>();
+		public ICollection<Lesson> Lessons { get; private set; } = new List<Lesson>();
 	}
 }

@@ -13,5 +13,8 @@
 				Name = name ?? string.Empty
 			};
 		}
+		protected Category() { }
+
+		public ICollection<StudyGroup> StudyGroups { get; private set; } = new List<StudyGroup>();
 	}
 }

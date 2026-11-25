@@ -13,20 +13,25 @@ namespace DrivingSchool.Forms
 
 		public StudyGroupEditForm(IStudyGroupRepository repository, ICategoryRepository categoryRepository, int id)
 		{
-			InitializeComponent(); _repository = repository; _categoryRepository = categoryRepository; _id = id;
+			InitializeComponent();
+			_repository = repository;
+			_categoryRepository = categoryRepository;
+			_id = id;
 		}
 
 		private void StudyGroupEditForm_Load(object sender, EventArgs e)
 		{
 			comboBoxCategory.DataSource = _categoryRepository.ReadAll();
-			comboBoxCategory.DisplayMember = "Name"; comboBoxCategory.ValueMember = "Id";
+			comboBoxCategory.DisplayMember = "Name";
+			comboBoxCategory.ValueMember = "Id";
 
 			if (_id > 0)
 			{
 				var group = _repository.ReadById(_id);
 				if (group != null)
 				{
-					textBoxName.Text = group.Name; comboBoxCategory.SelectedValue = group.CategoryId;
+					textBoxName.Text = group.Name;
+					comboBoxCategory.SelectedValue = group.CategoryId;
 					Text = "Редактирование группы";
 				}
 			}
@@ -37,15 +42,18 @@ namespace DrivingSchool.Forms
 		{
 			if (string.IsNullOrWhiteSpace(textBoxName.Text) || comboBoxCategory.SelectedValue == null)
 			{
-				MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
+				MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				return;
 			}
 
 			int categoryId = (int)comboBoxCategory.SelectedValue;
 			var entity = StudyGroup.CreateEntity(_id, textBoxName.Text.Trim(), categoryId);
 
-			if (_id == 0) _repository.Create(entity); else _repository.Update(entity);
+			if (_id == 0) _repository.Create(entity);
+			else _repository.Update(entity);
 
-			DialogResult = DialogResult.OK; Close();
+			DialogResult = DialogResult.OK;
+			Close();
 		}
 	}
 }
